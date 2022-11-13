@@ -3,10 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@callstack/react-theme-provider": "^3.0.8",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
-    "@monaco-editor/react": "^4.4.6",
     "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.10",
     "@testing-library/jest-dom": "^5.16.5",
@@ -19,7 +17,6 @@
     "react-ace": "^10.1.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
-    "react-particles": "^2.2.1",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.1.1",
