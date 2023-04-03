@@ -1,0 +1,15 @@
+.circle {
+    left: 40%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+  }
+@media screen and (min-width: 414px) {
+  .circle {
+    left: 41.5%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+  }
+}
+
