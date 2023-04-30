@@ -4,7 +4,7 @@ import {
   updateProfile,
   getAdditionalUserInfo,
   onAuthStateChanged,
-} from "firebase/auth";0
+} from "firebase/auth";
 import { NavLink, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, provider } from "../firebase/firebase";
