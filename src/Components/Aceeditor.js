@@ -88,6 +88,10 @@ export const Aceeditor = () => {
       setlan(event.target.value);
       seteditor("javascript");
     }
+    else if (event.target.value === "go") {
+      setlan(event.target.value);
+      seteditor("golang");
+    }
   };
   const run = () => {
     setmodal(false);
@@ -98,7 +102,7 @@ export const Aceeditor = () => {
     });
     var config = {
       method: "post",
-      url: "https://codex-api.herokuapp.com/",
+      url: "https://api.codex.jaagrav.in",
       headers: {
         "Content-Type": "application/json",
       },
@@ -107,7 +111,7 @@ export const Aceeditor = () => {
 
     axios(config)
       .then(function (response) {
-        // console.log(response.data);
+        // console.log(response.data.output);
         setoutput(response.data);
         setapierr("");
       })
@@ -211,6 +215,7 @@ export const Aceeditor = () => {
             <MenuItem value="cs">C#</MenuItem>
             <MenuItem value="js">Nodejs</MenuItem>
             <MenuItem value="py">Python</MenuItem>
+            <MenuItem value="go">Golang</MenuItem>
           </Select>
         </FormControl>
         &nbsp;
@@ -333,7 +338,7 @@ export const Aceeditor = () => {
         <h4 className="text-center alert-success border border-dark rounded">Output 🚀</h4>
 
         <div>
-          {output?.success ? (
+          {output?.output ? (
             <strong
               className="flex"
               style={{
